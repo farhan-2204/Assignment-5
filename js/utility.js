@@ -30,3 +30,15 @@ function donate(btn, give, amount){
             document.getElementById('modal').checked = true;
     })
 }
+
+function toggle(id1, id2, id11, id22){
+    document.getElementById(id1).addEventListener('click', function(){
+        document.getElementById(id22).classList.add('hidden');
+        document.getElementById(id11).classList.remove('hidden');
+    
+        document.getElementById(id1).classList.add('bg-[#B4F461]', 'text-black', 'border-none');
+        document.getElementById(id1).classList.remove('bg-white', 'text-gray-500', 'border-gray-400');
+        document.getElementById(id2).classList.add('bg-white', 'text-gray-500', 'border-gray-400');
+        document.getElementById(id2).classList.remove('bg-[#B4F461]', 'text-black', 'border-none');
+    })
+}
