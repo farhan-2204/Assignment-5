@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinment-5/Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="text-[#111111] text-xl font-bold">
+        <section class="flex flex-col gap-6 lg:gap-2 lg:flex-row justify-around items-center bg-blue-100/70 py-9 sticky top-0 z-50">
+            <button id="home" class="btn btn-primary bg-[#B4F461] text-[#111111] text-xl font-bold border-none px-8">Home</button>
+            <div class="flex items-center gap-4">
+                <div><img src="assets/logo.png"></div>
+                <div>Donate Bangladesh</div>
+            </div>
+            <div class="flex items-center gap-2 text-gray-500">
+                <div><img src="assets/coin.png"></div>
+                <div id="balance">5500</div>
+                <div>BDT</div>
+            </div>
+        </section>
+
+        <!-- Accordion from daisyUI -->
+        <section class="flex flex-col mt-20 mx-[9vw] gap-2 font-bold">
+            <div class="text-4xl mb-10">Frequently Asked Questions</div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content font-semibold">
+                  <p>The DOM (Document Object Model) is a structured representation of a webpage, where elements can be selected and modified using JavaScript.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl">How Do you select an element from the DOM?</div>
+                <div class="collapse-content font-semibold">
+                  <p>By ID(document.getElementById('id')), by class(document.getElementsByClassName('className')) or by tag name(document.getElementsByTagName('tagName'))</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content font-semibold">
+                  <p>Event delegation is attaching an event listener to a parent element instead of individual child elements. It helps handle events efficiently, especially when there are many child elements.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content font-semibold">
+                  <p>Use element.setAttribute('attribute', 'value') or element.style.property = 'value'</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/utility.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('home').addEventListener('click', function(){
+            window.location.href = '/index.html';
+            console.log(3);
+        })
+    </script>
+</body>
+</html>

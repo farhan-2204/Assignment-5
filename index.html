@@ -10,7 +10,7 @@
 <body>
     <main class="text-[#111111] text-xl font-bold">
         <section class="flex flex-col gap-6 lg:gap-2 lg:flex-row justify-around items-center bg-blue-100/70 py-9 sticky top-0 z-50">
-            <button class="btn btn-primary bg-[#B4F461] text-[#111111] text-xl font-bold border-none px-8">Blog</button>
+            <button id="blog" class="btn btn-primary bg-[#B4F461] text-[#111111] text-xl font-bold border-none px-8">Blog</button>
             <div class="flex items-center gap-4">
                 <div><img src="assets/logo.png"></div>
                 <div>Donate Bangladesh</div>
@@ -73,7 +73,9 @@
         </div>
        </section>
 
-       <section id="history" class="hidden"></section>
+       <section id="history" class="hidden">
+        <div id="not-found" class="font-extrabold text-5xl text-center">No donation records found</div>
+       </section>
 
        <section>
         <!-- Modal Section -->
@@ -94,9 +96,12 @@
 
     <footer id="footer" class="h-[150px] bg-[#F9F7F3]"></footer>
 
-    
-
     <script src="js/utility.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        document.getElementById('blog').addEventListener('click', function(){
+            window.location.href = '/blog.html';
+        })
+    </script>
 </body>
 </html>
