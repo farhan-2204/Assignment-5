@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="text-[#111111] text-xl font-bold">
+        <section class="flex flex-col gap-6 lg:gap-2 lg:flex-row justify-around items-center bg-blue-100/70 py-9 sticky top-0 z-50">
+            <button class="btn btn-primary bg-[#B4F461] text-[#111111] text-xl font-bold border-none px-8">Blog</button>
+            <div class="flex items-center gap-4">
+                <div><img src="assets/logo.png"></div>
+                <div>Donate Bangladesh</div>
+            </div>
+            <div class="flex items-center gap-2 text-gray-500">
+                <div><img src="assets/coin.png"></div>
+                <div id="balance">5500</div>
+                <div>BDT</div>
+            </div>
+        </section>
+        
+
+       <section class="flex justify-center gap-4 my-16">
+        <button id="donation-btn" class="btn btn-primary bg-[#B4F461] text-[#111111] text-xl font-bold border-none px-8">Donation</button>
+        <button id="history-btn" class="btn btn-primary bg-white text-gray-500 text-xl font-bold border-gray-400 px-8">History</button>
+       </section>
+       
+       <section id="donation" class="flex flex-col gap-10 justify-center mx-[9vw] mb-[80px]">
+        <div class="flex flex-col gap-12 lg:flex-row lg:items-center border border-gray-300 rounded-2xl p-8">
+            <div><img src="assets/noakhali.png"></div>
+            <div class="flex flex-col lg:items-start justify-between gap-6 lg:max-w-[50%]">
+                <div class="flex items-center gap-2 text-gray-500 border rounded-[8px] bg-gray-100 py-2 px-4 w-[50%] lg:w-[30%]">
+                    <div><img src="assets/coin.png"></div>
+                    <div id="amount-noakhali">0</div>
+                    <div>BDT</div>
+                </div>
+                <div>Donate for Flood at Noakhali, Bangladesh</div>
+                <div class="text-[17px] text-gray-500 font-semibold"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</div>
+                <input id="donate-noakhali" class="h-14 px-6 border border-gray-300 rounded-lg font-semibold w-full" type="number" placeholder="Write Donation Amount">
+                <button id="btn-noakhali" class="btn btn-primary bg-[#B4F461] text-[#111111] text-xl font-bold border-none px-8 w-full">Donate Now</button>
+            </div>
+        </div>
+        <div class="flex flex-col gap-12 lg:flex-row lg:items-center border border-gray-300 rounded-2xl p-8">
+            <div><img src="assets/feni.png"></div>
+            <div class="flex flex-col lg:items-start justify-between gap-6 lg:max-w-[50%]">
+                <div class="flex items-center gap-2 text-gray-500 border rounded-[8px] bg-gray-100 py-2 px-4 w-[50%] lg:w-[30%]">
+                    <div><img src="assets/coin.png"></div>
+                    <div id="amount-feni">0</div>
+                    <div>BDT</div>
+                </div>
+                <div>Donate for Flood Relief in Feni,Bangladesh</div>
+                <div class="text-[17px] text-gray-500 font-semibold">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</div>
+                <input id="donate-feni" class="h-14 px-6 border border-gray-300 rounded-lg font-semibold w-full" type="number" placeholder="Write Donation Amount">
+                <button id="btn-feni" class="btn btn-primary bg-[#B4F461] text-[#111111] text-xl font-bold border-none px-8 w-full">Donate Now</button>
+            </div>
+        </div>
+        <div class="flex flex-col gap-12 lg:flex-row lg:items-center border border-gray-300 rounded-2xl p-8">
+            <div><img src="assets/quota-protest.png"></div>
+            <div class="flex flex-col lg:items-start justify-between gap-6 lg:max-w-[50%]">
+                <div class="flex items-center gap-2 text-gray-500 border rounded-[8px] bg-gray-100 py-2 px-4 w-[50%] lg:w-[30%]">
+                    <div><img src="assets/coin.png"></div>
+                    <div id="amount-quota">0</div>
+                    <div>BDT</div>
+                </div>
+                <div>Aid for Injured in the Quota Movement</div>
+                <div class="text-[17px] text-gray-500 font-semibold">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</div>
+                <input id="donate-quota" class="h-14 px-6 border border-gray-300 rounded-lg font-semibold w-full" type="number" placeholder="Write Donation Amount">
+                <button id="btn-quota" class="btn btn-primary bg-[#B4F461] text-[#111111] text-xl font-bold border-none px-8 w-full">Donate Now</button>
+            </div>
+        </div>
+       </section>
+
+       <section id="history" class="hidden">abcde</section>
+
+       <section>
+        <!-- Modal Section -->
+        <input type="checkbox" id="modal" class="modal-toggle">
+        <div class="modal">
+            <div class="modal-box flex flex-col gap-4 justify-between items-center">
+                <div class="text-4xl">Congrates!</div>
+                <div><img src="assets/coin.png"></div>
+                <div class="text-[17px] font-semibold">You Have Donated for Humankind</div>
+                <div>Successfully</div>
+                <div class="modal-action">
+                    <label for="modal" class="btn">Close Confirmation</label>
+                </div>
+            </div>
+        </div>
+
+       </section>
+    </main>
+
+    <footer class="h-[150px] bg-[#F9F7F3]"></footer>
+
+    <script src="js/utility.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
