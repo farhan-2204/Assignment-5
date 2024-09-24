@@ -7,6 +7,4 @@ donate('btn-quota', 'donate-quota', 'amount-quota');
 toggle('history-btn', 'donation-btn', 'history', 'donation');
 toggle('donation-btn', 'history-btn', 'donation', 'history');
 
-//Change Web page
-
 

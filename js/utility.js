@@ -27,6 +27,7 @@ function donate(btn, give, amount){
         document.getElementById('balance').innerText = newBalance1;
 
         //history section
+        document.getElementById('not-found').classList.add('hidden');
         let historyText = _addMoneyInput + ' Taka is Donated for ';
 
         if(give === 'donate-feni')
