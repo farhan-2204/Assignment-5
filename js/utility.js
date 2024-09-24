@@ -1,3 +1,5 @@
+let myBalance = 12000;
+
 function donate(btn, give, amount){
     document.getElementById(btn).addEventListener('click', function(event){
         event.preventDefault();
@@ -25,6 +27,7 @@ function donate(btn, give, amount){
         const newBalance = parseFloat(balance) + parseFloat(addMoneyInput);
         document.getElementById(amount).innerText = newBalance;
         document.getElementById('balance').innerText = newBalance1;
+        myBalance = newBalance1;
 
         //history section
         document.getElementById('not-found').classList.add('hidden');
